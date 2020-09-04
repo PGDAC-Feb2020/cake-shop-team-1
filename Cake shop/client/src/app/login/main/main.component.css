@@ -1,0 +1,15 @@
+body
+{
+    background-image: url("https://picsum.photos/id/42/1350/720");
+    background-size: cover;
+}
+form
+{
+    color:white;
+}
+.si-cont
+{
+    
+    background-color: rgba(140, 243, 140,0);
+    box-shadow: 0 4px 8px 0 rgba(150, 3, 3, 0.5), 0 6px 20px 0 rgba(3, 85, 133, 0.8);
+}

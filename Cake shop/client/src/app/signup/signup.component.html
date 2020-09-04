@@ -1,0 +1,57 @@
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"> 
+            <div class="row justify-content-center align-content-center" 
+            style="height: 100vh;">
+            <div class=" col-12 col-md-6 col-lg-5 si-cont" 
+            style="border:1px solid black">
+            <div style="text-align: center;margin-top: 5%;">
+                <h1>SIGN UP</h1>
+
+            </div>
+            <div [formGroup]="fbFormGroup" style="color:white">
+                
+              <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+                A simple danger alert—check it out!
+              </div>      
+              <div class="form-group mt-3" >
+                        <label for="exampleInputEmail1">Username</label>
+                        <input type="text" class="form-control " formControlName="username"  placeholder="Enter username"  >   
+                        
+                                     
+                      </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Contact Number</label>
+                        <input type="number" class="form-control" formControlName="number"  placeholder="Enter contact number" >
+                     
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" formControlName="password" placeholder="Password" >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" formControlName="conPassword" placeholder="Confirm Password" >
+                      </div>
+                      <span id="PassNotMatch"></span> <br>
+                      <button type="submit" class="btn btn-primary mb-4 mt-3 mr-3" 
+                      [disabled]="!fbFormGroup.valid"
+                      (click)="registerHere()">Submit</button>
+                      Already user? <a routerLink="/login">Please Sign in</a>
+                
+                
+
+            </div>
+            
+
+            </div>
+
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
